@@ -15,11 +15,11 @@ header {
   z-index: 1; /* Assure que le contenu du header reste au-dessus */
 }
 
-main section {
+.banner {
   position: relative; /* Crée un contexte de positionnement pour l'image */
 }
 
-main section img {
+.banner img {
   position: absolute;
   top: -200px; /* Ajuster cette valeur pour que l'image monte dans le header */
   left: 0;
@@ -29,8 +29,8 @@ main section img {
 }
 
 /* Assurer que le contenu de la section ne chevauche pas l'image */
-main section h1,
-main section button {
+.banner h1,
+.banner button {
   position: relative;
   z-index: 1; /* Met le texte et le bouton au-dessus de l'image */
 }
@@ -59,4 +59,215 @@ nav ul a {
 
 .banner h1 {
   color: white;
+  font-family: Italiana;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47.12px;
+  text-align: left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 324px;
+}
+
+.mini_bar {
+  width: 280px;
+  border: 2px solid #ffffff;
+  position: absolute;
+  right: 0;
+  top: 173px;
+  margin: auto 3%;
+}
+.mini_bar2 {
+  width: 280px;
+  border: 2px solid #ffffff;
+  position: absolute;
+  margin: auto 3%;
+  top: 173px;
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  width: 210px;
+  height: 50px;
+  background: none;
+  border-radius: 0.5rem;
+  border: solid 2px white;
+  color: white;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant {
+  padding: 5rem;
+  display: flex;
+}
+
+.btn_green {
+  width: 210px;
+  height: 50px;
+  background-color: #465d2a;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.picture_restaurant {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+/* .picture_restaurant {
+    display: flex;
+  }
+  .picture_restaurant img {
+    width: 100%;
+  } */
+.restaurant {
+  background-image: linear-gradient(
+      rgba(217, 217, 217, 0.9),
+      rgba(217, 217, 217, 0.7)
+    ),
+    url("images/logo/background/4c43d3eea6de23239fc48b3c738394b5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.text_restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_orange {
+  width: 210px;
+  height: 50px;
+  background-color: #d37533;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.text_restaurant h2 {
+  font-family: Italiana;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56.54px;
+  text-align: left;
+  color: #381505;
+}
+
+.text_restaurant h5 {
+  font-family: Montserrat;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: left;
+}
+
+.the_boss {
+  display: flex;
+  background-image: linear-gradient(
+      rgba(217, 217, 217, 0.9),
+      rgba(217, 217, 217, 0.7)
+    ),
+    url("images/logo/background/4c43d3eea6de23239fc48b3c738394b5.jpg");
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.the_boss img {
+  width: 600px;
+}
+
+.card_content {
+  display: flex;
+}
+
+.card-speciality img {
+  width: 80%;
+}
+
+.card-speciality h5 {
+  font-family: Italiana;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30.63px;
+  letter-spacing: 0.6000000238418579px;
+  text-align: left;
+}
+.speciality {
+  background-image: linear-gradient(
+      rgba(217, 217, 217, 0.9),
+      rgba(217, 217, 217, 0.7)
+    ),
+    url("images/logo/background/4c43d3eea6de23239fc48b3c738394b5.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 5rem;
+  height: 865px;
+}
+
+.text_speciality {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_speciality h2 {
+  font-family: Italiana;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 56.54px;
+  text-align: left;
+  margin-bottom: 0;
+  color: #381505;
+}
+
+.text_speciality h5 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.text_speciality p {
+  width: 50%;
+}
+
+.marks {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0 4rem;
+}
+
+.look_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.look_content p {
+  width: 51%;
 }
