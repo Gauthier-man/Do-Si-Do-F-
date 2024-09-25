@@ -1,0 +1,62 @@
+html {
+  max-width: 1440px;
+  margin: auto;
+}
+
+main {
+  margin: auto 3%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 8%;
+  position: relative;
+  z-index: 1; /* Assure que le contenu du header reste au-dessus */
+}
+
+main section {
+  position: relative; /* Crée un contexte de positionnement pour l'image */
+}
+
+main section img {
+  position: absolute;
+  top: -200px; /* Ajuster cette valeur pour que l'image monte dans le header */
+  left: 0;
+  width: 100%; /* Image occupe toute la largeur */
+  height: auto;
+  z-index: 0; /* L'image passe sous le header */
+}
+
+/* Assurer que le contenu de la section ne chevauche pas l'image */
+main section h1,
+main section button {
+  position: relative;
+  z-index: 1; /* Met le texte et le bouton au-dessus de l'image */
+}
+
+header img {
+  width: 70px;
+  height: 70px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 6rem;
+  color: white;
+}
+
+nav ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon_earth img {
+  width: 25px;
+  height: 25px;
+}
+
+.banner h1 {
+  color: white;
+}
